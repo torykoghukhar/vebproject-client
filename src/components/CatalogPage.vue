@@ -87,7 +87,7 @@
         class="book-card" 
         @click="goToBookDetails(book.id)"
       >
-      <img :src="'http://localhost:8080' + book.pictureUrl" :alt="book.title" class="book-image" />
+      <img :src="require('@/assets/bookcovers/' + book.pictureUrl)" :alt="book.title" class="book-image" />
         <div class="book-details">
           <h3 class="book-title">{{ book.title }}</h3>
           <p class="book-author">{{ book.author }}</p>
