@@ -1,7 +1,7 @@
 <template>
   <div class="book-details-page">
     <div class="book-details-container">
-      <img :src="'http://localhost:8080' + book.pictureUrl" :alt="book.title" class="book-cover" />
+      <img :src="require('@/assets/bookcovers/' + book.pictureUrl)" :alt="book.title" class="book-cover" />
       <div class="book-info">
         <h1>{{ book.title }}</h1>
         <p><strong>Author:</strong> {{ book.author }}</p>
